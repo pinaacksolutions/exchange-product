@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/UserDashboard_LayoutPage1.cshtml";
+}
+
+<div class="container-fluid mb-2">
+    <div class="card mb-2">
+        <div class="card-body pb-2 pt-2">
+            <div class="row">
+            <div class="col-md-6"><h4 class="pt-1">Product Details</h4>
+                </div>
+          
+<div class="col-md-6 text-right">
+    
+                <div> <strong>Approved</strong> <i class="icon font-white bg-success fa fa-check" style="padding-top:12px;"></i>
+                    <strong>Rejected</strong> <i class="icon font-white bg-danger fa fa-times" style="padding-top:12px;"></i><strong>Pending</strong> <i class="icon font-white bg-warning fa fa-clock-o " style="padding-top:12px;"></i></div>
+    
+   
+</div></div>
+            
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead style="background-color:black; color:white;" >
+                <tr>
+                    <th scope="col">Sr.No</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Sub Category</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Status</th>
+                  
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Thornton</td>
+                    <td><img src="~/customize/img/engine4.jpg" alt="..." class="img-fluid product-list-image-size"></td>
+                    <td><div class="icon font-white bg-success"><i class="fa fa-check"></i></div></td>
+                  
+                    <td><button class="ForgetPwd convert-link-to-btn open-product-Detail" style="color:black" type="button"  id="viewdetaibtn">View</button> | <a href="/HomeBuilt1/AddProduct" class="ForgetPwd convert-link-to-btn" style="color:black"  value="Edit">&nbsp;Edit</a> |  <button class="ForgetPwd convert-link-to-btn font-white" style="color:black" >Delete</button> </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>Thornton</td>
+                    <td><img src="~/customize/img/engine1.jpg" alt="..." class="img-fluid product-list-image-size"></td>
+                    <td><div class="icon font-white bg-danger"><i class="fa fa-times"></i></div></td>
+                  
+                    <td><button class="ForgetPwd convert-link-to-btn open-product-Detail" style="color:black" type="button" id="viewdetaibtn">View</button> | <a href="/HomeBuilt1/AddProduct" class="ForgetPwd convert-link-to-btn" style="color:black" value="Edit">&nbsp;Edit</a> |  <button class="ForgetPwd convert-link-to-btn font-white" style="color:black">Delete</button> </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>Thornton</td>
+                    <td><img src="~/customize/img/engine2.jpg" alt="..." class="img-fluid product-list-image-size"></td>
+                    <td><div class="icon font-white bg-warning"><i class="fa fa-clock-o"></i></div></td>
+                    <td><button class="ForgetPwd convert-link-to-btn open-product-Detail" style="color:black" type="button" id="viewdetaibtn">View</button> | <a href="/HomeBuilt1/AddProduct" class="ForgetPwd convert-link-to-btn" style="color:black" value="Edit">&nbsp;Edit</a> |  <button class="ForgetPwd convert-link-to-btn font-white" style="color:black">Delete</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+@Html.Partial("ProductDetail_PartialView");

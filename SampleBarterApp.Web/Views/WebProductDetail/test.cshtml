@@ -1,0 +1,577 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/customize/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/customize/css/mycss.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/customize/js/popper.min.js"></script>
+    <script src="~/customize/js/bootstrap.js"></script>
+    <script src="~/customize/js/Myjs.js"></script>
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    @*<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>*@
+    <link href="~/customize/css/xzoom.css" rel="stylesheet" />
+    <script src="~/customize/js/xzoom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+  
+</head>
+<body>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Exchange</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/WebProductDetail/Index">Product Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <br /><br /><br />
+    <section id="content" class="contentHeight">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="row">
+                                                    <div class="large-5 column">
+                                                        <div class="xzoom-container ml-3">
+                                                            <img class="xzoom view-image-width" id="xzoom-default" src="~/customize/img/image-04.jpg" xoriginal="~/customize/img/image-04.jpg" />
+                                                            <div class="xzoom-thumbs">
+                                                                <a href="~/customize/img/image-04.jpg"><img class="xzoom-gallery height" width="80" src="~/customize/img/image-04.jpg" xpreview="~/customize/img/image-04.jpg"></a>
+                                                                <a href="~/customize/img/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="~/customize/img/02_o_car.jpg"></a>
+                                                                <a href="~/customize/img/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="~/customize/img/03_r_car.jpg"></a>
+                                                                <a href="~/customize/img/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="~/customize/img/04_g_car.jpg"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="large-7 column"></div>
+                                                </div>
+                                                @*<div id="mainContainer">
+                                                        <div id="leftNav">
+                                                            <img src="~/customize/img/image-01.jpg" class="image-width" alt="image-01.jpg" title="image-01.jpg" onclick="showImage('image-01.jpg');" />
+                                                            <br />
+                                                            <img src="~/customize/img/image-02.jpg" class="image-width" alt="image-02.jpg" title="image-02.jpg" onclick="showImage('image-02.jpg');" />
+                                                            <br />
+                                                            <img src="~/customize/img/image-03.jpg" class="image-width" alt="image-03.jpg" title="image-03.jpg" onclick="showImage('image-03.jpg');" />
+                                                            <br />
+                                                            <img src="~/customize/img/image-04.jpg" class="image-width" alt="image-04.jpg" title="image-04.jpg" onclick="showImage('image-04.jpg');" />
+                                                            <br />
+                                                            <img src="~/customize/img/image-05.jpg" class="image-width" alt="image-05.jpg" title="image-05.jpg" onclick="showImage('image-05.jpg');" />
+
+                                                        </div>
+                                                        <div id="rightDisplay">
+                                                            <img id="currentImg" src="~/customize/img/image-01.jpg" class="view-image-width img-fluid" alt="image-01.jpg" title="image-01.jpg" />
+
+                                                        </div>
+                                                        <div id="myModal" class="modal">
+                                                            <span class="close">&times;</span>
+                                                            <img class="modal-content" id="img01">
+
+                                                        </div>
+                                                    </div>*@
+                                            </div>
+                                            <div class="col-md-5 mt-1 ">
+                                                <div>
+                                                    @*<div class="card-header">
+                                                            Description
+                                                        </div>*@
+                                                    <div>
+                                                        @*<h5 class="card-title">Special title treatment</h5>*@
+                                                        <div class="text-center">
+                                                            <h3>Engine</h3>
+                                                            <p>Maruti Car Engine</p>
+                                                        </div>
+                                                        <div class="pt-4">
+                                                            <h6 class="text-center">PRODUCT DETAILS</h6>
+                                                            <ul style="list-style:disc;">
+                                                                <li><b> Bill:</b> No</li>
+                                                                <li><b> Guarantee:</b> No</li>
+                                                                <li><b>Warranty:</b> No</li>
+                                                                <li><b>Purchase Date:</b> 05.04.2017</li>
+                                                                @*<li><b>Material:</b> Wood, Leather</li>
+                                                                <li><b>Color:</b> White, Grey</li>*@
+                                                         
+                                                            </ul>
+
+                                                        </div>
+                                                        <div class="text-center">
+                                                           @*<input type="submit" value="REQUEST FOR ITEM" class="custom-btn btn-exchange" />*@
+                                                            <button class="custom-btn btn-exchange"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button>
+                                                            <br />
+                                                            <br />
+                                                           @*<input type="submit" value="LOGIN" class="custom-btn btn-exchange-transparent" />*@
+                                                            <button class="custom-btn btn-exchange-transparent"><i class="fa fa-sign-in"></i> LOGIN</button>
+                                                           
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                               
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                        <button class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                                                        @*<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>*@
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos</div>
+                                                    @*<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos</div>
+                                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos</div>*@
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                @*<div class="card">
+                                    <div class="card-body">
+                                            <div class="card-body p-2">
+                                                <div class="row">
+                                                    <div class="col-md-4"><img class="card-img-top" style="width:120px; height:120px;" src="~/customize/img/image-01.jpg" alt="Card image cap"></div>
+                                                    <div class="col-md-8">
+                                                        <h5>Description</h5>
+                                                        <p class="text-justify card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="card-body p-2">
+                                                <div class="row">
+                                                    <div class="col-md-4"><img class="card-img-top" style="width:120px; height:120px;" src="~/customize/img/image-01.jpg" alt="Card image cap"></div>
+                                                    <div class="col-md-8">
+                                                        <h5>Description</h5>
+                                                        <p class="text-justify card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                    </div>
+                                                </div>
+
+                                           
+                                        </div>
+                                            <div class="card-body p-2">
+                                                <div class="row">
+                                                    <div class="col-md-4"><img class="card-img-top" style="width:120px; height:120px;" src="~/customize/img/image-01.jpg" alt="Card image cap"></div>
+                                                    <div class="col-md-8">
+                                                        <h5>Description</h5>
+                                                        <p class="text-justify card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                    </div>
+                                                </div>
+
+                                          
+                                        </div>
+                                            <div class="card-body p-2">
+                                                <div class="row">
+                                                    <div class="col-md-4"><img class="card-img-top" style="width:120px; height:120px;" src="~/customize/img/image-01.jpg" alt="Card image cap"></div>
+                                                    <div class="col-md-8">
+                                                        <h5>Description</h5>
+                                                        <p class="text-justify card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                                                    </div>
+                                                </div>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>*@ 
+                                <div class="accordion md-accordion accordion-1" id="accordionEx23" role="tablist">
+                                    <div class="card">
+                                        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading96">
+                                            <h5 class="text-uppercase mb-0 py-1">
+                                                <a class="white-text font-weight-bold" data-toggle="collapse" href="#collapse96" aria-expanded="true" aria-controls="collapse96">
+                                                    I am the first title of accordion
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse96" class="collapse show" role="tabpanel" aria-labelledby="heading96" data-parent="#accordionEx23">
+                                            <div class="card-body">
+                                                <div class="row my-4">
+                                                    <div class="col-md-8">
+                                                        <h2 class="font-weight-bold mb-3 black-text">Hi! I am the first one.</h2>
+                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                                                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                    </div>
+                                                    <div class="col-md-4 mt-3 pt-2">
+                                                        <div class="view z-depth-1">
+                                                            <img src="https://mdbootstrap.com/img/Photos/Others/nature.jpeg" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
+                                            <h5 class="text-uppercase mb-0 py-1">
+                                                <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97">
+                                                    I am the second title of accordion
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse97" class="collapse" role="tabpanel" aria-labelledby="heading97" data-parent="#accordionEx23">
+                                            <div class="card-body">
+                                                <div class="row my-4">
+                                                    <div class="col-md-8">
+                                                        <h2 class="font-weight-bold mb-3 black-text">Hi! I am the second one.</h2>
+                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                                                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                    </div>
+                                                    <div class="col-md-4 mt-3 pt-2">
+                                                        <div class="view z-depth-1">
+                                                            <img src="https://mdbootstrap.com/img/Photos/Others/nature.jpeg" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
+                                            <h5 class="text-uppercase mb-0 py-1">
+                                                <a class="collapsed font-weight-bold white-text" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98">
+                                                    I am the third title of accordion
+                                                </a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse98" class="collapse" role="tabpanel" aria-labelledby="heading98" data-parent="#accordionEx23">
+                                            <div class="card-body">
+                                                <div class="row my-4">
+                                                    <div class="col-md-8">
+                                                        <h2 class="font-weight-bold mb-3 black-text">Hi! I am the third one.</h2>
+                                                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                                                        <p class="mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                                    </div>
+                                                    <div class="col-md-4 mt-3 pt-2">
+                                                        <div class="view z-depth-1">
+                                                            <img src="https://mdbootstrap.com/img/Photos/Others/nature.jpeg" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Accordion wrapper-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            @*According to Main Item silder Start*@
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="~/customize/img/image-01.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                        <p class="text-center mb-0">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-info-circle"></i> Detail</button>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+
+
+
+            </div>
+            <br />
+            <div class="container-fluid">
+                @*Message product Details start*@
+                @*<div class="row">*@
+                    @*<div class="col-md-9">*@
+                        @*<div class="panel panel-white post panel-shadow">
+                            <div class="post-heading">
+                                <div class="pull-left image">
+                                    <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                </div>
+                                <div class="pull-left meta">
+                                    <div class="title h5">
+                                        <a href="#"><b>Ryan Haywood</b></a>
+                                        made a post.
+                                    </div>
+                                    <h6 class="text-muted time">1 minute ago</h6>
+                                </div>
+                            </div>
+                            <div class="post-description">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="stats">
+                                    <a href="#" class="btn btn-default stat-item">
+                                        <i class="fa fa-thumbs-up icon"></i>2
+
+                                    </a>
+                                    <a href="#" class="btn btn-default stat-item">
+                                        <i class="fa fa-thumbs-down icon"></i>12
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-white post panel-shadow">
+                            <div class="post-heading">
+                                <div class="pull-left image">
+                                    <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                                </div>
+                                <div class="pull-left meta">
+                                    <div class="title h5">
+                                        <a href="#"><b>Ryan Haywood</b></a>
+                                        made a post.
+                                    </div>
+                                    <h6 class="text-muted time">1 minute ago</h6>
+                                </div>
+                            </div>
+                            <div class="post-description">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <div class="stats">
+                                    <a href="#" class="btn btn-default stat-item">
+                                        <i class="fa fa-thumbs-up icon"></i>2
+                                    </a>
+                                    <a href="#" class="btn btn-default stat-item">
+                                        <i class="fa fa-thumbs-down icon"></i>12
+                                    </a>
+                                </div>
+                            </div>
+                        </div>*@
+                        @*<br />
+                        <div class="card card-info">
+                            <div class="card-body p-2">
+                                <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
+                                <form class="form-inline">
+                                    <button class="btn btn-primary float-xs-right" type="button">Share</button>
+                                </form>
+                            </div>
+                        </div>*@
+                    @*</div>*@ 
+
+                @*</div>*@
+                <div class="row">
+                   
+                    <div class="col-md-3">
+                        <div class="dashboardBoxBg mb30">
+                            <div class="profileImage">
+
+                                <img src="~/customize/img/User-dummy.png" alt="Image User" class="img-circle-user">
+                                <p class="m-0">Username</p>
+                                <div class="rating">
+                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                </div>
+                            </div>
+                            <div class="profileUserInfo bt profileName">
+                                <h4>Verification level</h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:45%">45%</div>
+                                </div>
+                                <br />
+                                <button class="custom-btn btn-exchange"><i class="fa fa-paper-plane"></i> Message</button>
+                                <a class="custom-btn btn-exchange" style="color:white;"><i class="fa fa-info-circle"></i> Detail</a>
+                                @*<a href="#" class="custom-btn btn-exchange">Detail</a>*@
+                                @*<button class="custom-btn btn-exchange"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button>*@
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                @*Message product Details End*@
+            </div>
+            <br />
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <p>Copyright © 2018. All Rights Reserved</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        @*According to Main Item silder End*@
+    </section>
+    <br />
+    @*<script>
+            debugger;
+            var modal = document.getElementById('myModal');
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('currentImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            debugger;
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>*@
+    <script src="~/customize/js/setup.js"></script>
+
+</body>
+
+</html>

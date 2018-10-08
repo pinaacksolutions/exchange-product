@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @*<link href="~/customize/css/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/customize/css/mycss.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    @*<script src="~/customize/js/bootstrap.js"></script>*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/customize/js/Myjs.js"></script>
+    @*<link href="~/Content/font-awesome.min.css" rel="stylesheet" />*@
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+    @*new css files addition*@
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en">
+    <link href="~/css/NewMessageHistory.css" rel="stylesheet" />
+
+</head>
+<body>
+    <section id="header">
+        @Html.Partial("Layout_Header_PartialView")
+    </section>
+    <section id="mainContent">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 left-sidebar pl-0 pr-0">
+                    @Html.Partial("SideBar_Layout__PartialView")
+                </div>
+                <div class="col-md-10" style="background-color:#eef5f9;">
+                    @RenderBody()
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        @Html.Partial("Footer_Layout_PartialView")
+    </section>
+    <script src="~/customize/js/spartan-multi-image-picker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#coba").spartanMultiImagePicker({
+                fieldName: 'fileUpload[]',
+                maxCount: 5,
+                rowHeight: '66px',
+                groupClassName: 'col-md-4 col-sm-4 col-xs-6',
+                maxFileSize: '',
+                placeholderImage: {
+                    image: '/images/placeholder.png',
+                    width: '100%'
+                },
+                dropFileLabel: "Drop Here",
+                onAddRow: function (index) {
+                    console.log(index);
+                    console.log('add new row');
+                },
+                onRenderedPreview: function (index) {
+                    console.log(index);
+                    console.log('preview rendered');
+                },
+                onRemoveRow: function (index) {
+                    console.log(index);
+                },
+                onExtensionErr: function (index, file) {
+                    console.log(index, file, 'extension err');
+                    alert('Please only input png or jpg type file')
+                },
+                onSizeErr: function (index, file) {
+                    console.log(index, file, 'file size too big');
+                    alert('File size too big');
+                }
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            if (window.File && window.FileList && window.FileReader) {
+
+                $("#files").on("change", function (e) {
+                    var files = e.target.files,
+                        filesLength = files.length;
+
+                    for (var i = 0; i < filesLength; i++) {
+                        var f = files[i]
+                        var fileReader = new FileReader();
+                        fileReader.onload = (function (e) {
+
+                            var file = e.target;
+                            $("<span class=\"pip\">" +
+                                "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+                                "<br/><span class=\"remove\"><i class='fa fa-times'></i></span>" +
+                                "</span>").insertAfter("#files");
+                            $(".remove").click(function () {
+                                $(this).parent(".pip").remove();
+                            });
+
+                            // Old code here
+                            /*$("<img></img>", {
+                              class: "imageThumb",
+                              src: e.target.result,
+                              title: file.name + " | Click to remove"
+                            }).insertAfter("#files").click(function(){$(this).remove();});*/
+
+                        });
+                        fileReader.readAsDataURL(f);
+                    }
+                });
+            } else {
+                alert("Your browser doesn't support to File API")
+            }
+        });
+    </script>
+    <script>
+        var app = new function () {
+            var test = undefined;
+
+            this.el = document.getElementById('countries');
+            //this.countries = ['test', 'test1', 'test2'];
+            //this.category = ['test', 'test1', 'test2'];
+            //this.subcategory = ['test', 'test1', 'test2'];
+            //this.description = ['test', 'test1', 'test2'];
+            this.countries = ['test', 'test1', 'test2'];
+            this.Categories = ['Bikes', 'Car', 'Mobiles'];
+            this.subcategories = ['Spare Parts', 'Motorcycles', 'Scooters'];
+            this.descriptions = ['test', 'test1', 'test2'];
+            this.Count = function (data) {
+                var el = document.getElementById('counter');
+                var name = 'Total Added Items :';
+                if (data) {
+                    if (data > 1) {
+                        name = 'Total Added Items';
+                    }
+                    el.innerHTML = name + ' ' + data;
+                } else {
+                    el.innerHTML = 'No ' + name;
+                }
+            };
+
+            this.FetchAll = function () {
+
+                var data = '';
+                if (this.countries.length > 0) {
+                    for (i = 0; i < this.countries.length; i++) {
+                        data += '<tr>';
+                        data += '<td>' + this.countries[i] + '</td>';
+                        data += '<td>' + this.Categories[i] + '</td>';
+                        data += '<td>' + this.subcategories[i] + '</td>';
+                        data += '<td>' + this.descriptions[i] + '</td>';
+                        data += '<td><img src="/customize/img/engine1.jpg" alt="..." class="img-fluid product-list-image-size"></td>';
+                        data += '<td><button class="custom-btn btn-exchange" onclick="app.Edit(' + i + ')"><i class="fa fa-pencil-square-o"></i> Edit</button> | <button class="custom-btn btn-exchange" onclick="app.Delete(' + i + ')"> <i class="fa fa-trash-o"></i> Delete</button></td>';
+
+                        data += '</tr>';
+                    }
+                }
+                this.Count(this.countries.length);
+                return this.el.innerHTML = data;
+            };
+            this.Add = function () {
+
+                //var elem = document.getElementById("btnsubmit")
+                //if (elem.value == "ADD")
+              
+                if (this.test == "" || this.test == undefined) {
+
+                    el = document.getElementById('add-name');
+                    el1 = document.getElementById('ddlcategoryneed');
+                    el2 = document.getElementById('ddlsubcategoryneed');
+                    el3 = document.getElementById('needtxtdescription');
+                    // Get the value
+                    var country = el.value;
+                    var category = el1.value;
+                    var subcategory = el2.value;
+                    var discription = el3.value;
+                    if (country && category && subcategory && discription) {
+                        // Add the new value
+                        this.countries.push(country.trim());
+                        this.Categories.push(category.trim());
+                        this.subcategories.push(subcategory.trim());
+                        this.descriptions.push(discription.trim());
+                        // Reset input value
+                        el.value = '';
+                        el1.value = 'Select';
+                        el2.value = 'Select';
+                        el3.value = '';
+                        // Dislay the new list
+                        this.FetchAll();
+                    }
+                }
+            };
+            this.Edit = function (item) {
+              
+                this.test = item;
+                //var elem = document.getElementById("btnsubmit")
+                //if (elem.value == "ADD")
+                //    elem.value = "Update";
+
+                //var el = document.getElementById('edit-name');
+                var el = document.getElementById('add-name');
+                var el1 = document.getElementById('ddlcategoryneed');
+                var el2 = document.getElementById('ddlsubcategoryneed');
+                var el3 = document.getElementById('needtxtdescription');
+                // Display value in the field
+                el.value = this.countries[item];
+                el1.value = this.Categories[item];
+                el2.value = this.subcategories[item];
+                el3.value = this.descriptions[item];
+
+                // Display fields
+                //  document.getElementById('spoiler').style.display = 'block';
+                self = this;
+                document.getElementById('saveEdit').onsubmit = function () {
+
+                    var country = el.value;
+                    var category = el1.value;
+                    var subcategory = el2.value;
+                    var discription = el3.value;
+                    if (country && category && subcategory && discription) {
+
+                        // Edit value
+                        self.countries.splice(item, 1, country.trim());
+                        self.Categories.splice(item, 1, category.trim());
+                        self.subcategories.splice(item, 1, subcategory.trim());
+                        self.descriptions.splice(item, 1, discription.trim());
+
+                        // Display the new list
+                        self.FetchAll();
+                        // Hide fields
+                        CloseInput();
+
+                        // Reset input value
+                        el.value = '';
+                        el1.value = 'Select';
+                        el2.value = 'Select';
+                        el3.value = '';
+                        // Dislay the new list
+                        this.test = "";
+                        this.FetchAll();
+
+
+                    }
+                }
+            };
+            this.Delete = function (item) {
+                // Delete the current row
+                this.countries.splice(item, 1);
+                // Display the new list
+                this.FetchAll();
+            };
+
+        }
+        app.FetchAll();
+
+        function CloseInput() {
+            // document.getElementById('spoiler').style.display = 'none';
+            //var elem = document.getElementById("btnsubmit")
+            //if (elem.value == "Update")
+            //    elem.value = "ADD";
+            // this.test = "";
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', ".open-product-Detail", function () {
+                $("#productDetails").modal('show');
+            });
+
+        })
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+          
+            $('#test').click(function () {
+              
+                $("#sidebar-content")
+                    .removeClass("w-100")
+                    .width($("#sidebar").width());
+                $("#sidebar").css({ "flex": "none" });
+                $("#sidebar").animate({
+                    width: "toggle"
+                }, 600, function () {
+                    $("#sidebar").css({ "flex": '', "width": '' });
+                    $("#sidebar-content")
+                        .css("width", "")
+                        .addClass("w-100");
+                });
+            });
+
+            $("#search").on("keyup", function () {
+              
+                var value = $(this).val().toLowerCase();
+                $("#friend-list a .username").filter(function () {
+                    $(this).parent().toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

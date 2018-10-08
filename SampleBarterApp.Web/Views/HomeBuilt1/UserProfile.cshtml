@@ -1,0 +1,245 @@
+﻿
+
+@{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/UserDashboard_LayoutPage1.cshtml";
+}
+
+<div class="container">
+    <div class="card mb-4">
+        <div class="card-body pb-2 pt-2">
+            <div class="row">
+                <div class="col-md-12"><h4 class="pb-0">Profile Detail</h4></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <!-- left column -->
+        <div class="col-md-3">
+            <div class="text-center">
+                <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                <h6>Upload a different photo...</h6>
+
+                <input type="file" class="form-control border-radius">
+            </div>
+        </div>
+        <!--/col-3-->
+        <div class="col-md-9">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" style="" role="tablist">
+                    <button class="nav-item nav-link p-3 active" style="background: none; border: 1px solid #dee2e6" id="nav-needitems1-tab" data-toggle="tab" href="#nav-needitem1-tab" role="tab" aria-controls="nav-needitem1-tab" aria-selected="true"><strong>Home</strong></button>
+                  
+                    <button class="nav-item nav-link p-3" id="nav-needitems3-tab" style="background: none; border: 1px solid #dee2e6" data-toggle="tab" href="#nav-needitem3-tab" role="tab" aria-controls="nav-needitem3-tab" aria-selected="false"><strong>Change Password</strong></button>
+                </div>
+            </nav>
+            @*<ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#messages" data-toggle="tab">Verification  </a></li>
+                <li><a href="#settings" data-toggle="tab">Change Password</a></li>
+            </ul>*@
+
+            <div class="tab-content" id="nav-tabContent" style="border: 1px solid #03a9f4;">
+                <div class="tab-pane fade show active" id="nav-needitem1-tab" role="tabpanel" aria-labelledby="nav-needitems1-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control border-radius " name="first_name" id="first_name" placeholder="Enter First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control border-radius" name="last_name" id="last_name" placeholder="Enter Last Name">
+                                    </div>
+                                </div>
+                              
+
+                                <div class="form-group row">
+                                    <div class="col-md-6">
+                          
+                                        <input type="text" class="form-control border-radius" name="phone" id="phone" placeholder="Enter Phone Number" title="enter your phone number if any.">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control border-radius" name="mobile" id="mobile" placeholder="Enter Mobile Number" title="enter your mobile number if any.">
+                                    </div>
+                                </div>
+
+                               
+                                <div class="form-group row">
+
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control border-radius" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-control border-radius border-radius" id="ddlcategory">
+                                            <option value="0">-Select Country-</option>
+                                            <option value="1">Iceland</option>
+                                            <option value="2">India</option>
+                                            <option value="3">Indonesia</option>
+                                            <option value="4">Iran</option>
+                                            <option value="5">Iraq</option>
+                                            <option value="6">Ireland</option>
+                                            <option value="7">Israel</option>
+                                            <option value="8">Italy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               
+
+
+                                <div class="form-group row">
+
+                                    <div class="col-md-6">
+                                        <select class="form-control border-radius border-radius" id="ddlcategory">
+                                            <option value="0">-Select State-</option>
+                                            <option value="1">Andhra Pradesh</option>
+                                            <option value="2">Arunachal Pradesh</option>
+                                            <option value="3">Assam</option>
+                                            <option value="4">Bihar</option>
+                                            <option value="5">Chhattisgarh</option>
+                                            <option value="6">Goa</option>
+                                            <option value="7">Gujarat</option>
+                                            <option value="8">Haryana</option>
+                                            <option value="9">Himachal Pradesh</option>
+                                            <option value="10">Jammu & Kashmir</option>
+                                            <option value="11">Jharkhand</option>
+                                            <option value="12">Karnataka</option>
+                                            <option value="13">Kerala</option>
+                                            <option value="14">Madhya Pradesh</option>
+                                            <option value="15">Maharashtra</option>
+                                            <option value="16">Manipur</option>
+                                            <option value="17">Meghalaya</option>
+                                            <option value="18">Mizoram</option>
+                                            <option value="19">Nagaland</option>
+                                            <option value="20">Odisha</option>
+                                            <option value="21">Punjab</option>
+                                            <option value="22">Rajasthan</option>
+                                            <option value="23">Sikkim</option>
+                                            <option value="24">Tamil Nadu</option>
+                                            <option value="25">Telangana</option>
+                                            <option value="26">Tripura</option>
+                                            <option value="27">Uttarakhand</option>
+                                            <option value="28">Uttar Pradesh</option>
+                                            <option value="29">West Bengal</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-control border-radius border-radius" id="ddlcategory">
+                                            <option value="0">-Select City-</option>
+                                            <option value="1">Jaipur</option>
+                                            <option value="2">Jodhpur</option>
+                                            <option value="3">Kota</option>
+                                            <option value="4">Bikaner</option>
+                                            <option value="5">Ajmer</option>
+                                            <option value="6">Udaipur</option>
+                                            <option value="7">Bhilwara</option>
+                                            <option value="8">Alwar</option>
+                                            <option value="9">Bharatpur</option>
+                                            <option value="10">Sikar</option>
+                                            <option value="11">Sri Ganganagar</option>
+                                            <option value="12">Pali</option>
+                                            <option value="13">Chittorgarh</option>
+                                            <option value="14">Tonk</option>
+                                            <option value="15">Kishangarh</option>
+                                            <option value="16">Beawar</option>
+                                            <option value="17">Hanumangarh</option>
+                                            <option value="18">Dholpur</option>
+                                            <option value="19">Gangapur city</option>
+                                            <option value="20">Sawai Madhopur</option>
+                                            <option value="21">Churu</option>
+                                            <option value="22">Jhunjhunu</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                <div class="form-group">
+
+                                    <div class="col-xs-3">
+                                 
+                                        <input type="email" placeholder="Enter Your Area" class="form-control border-radius" name="Area" id="area">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-xs-9">
+                                      
+                                        <textarea type="email" class="form-control border-radius" name="email" id="email" placeholder="Enter Present Address" title="enter your email."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <div class="col-xs-9">
+                                   
+                                        <textarea class="form-control border-radius" id="location" placeholder="Enter Permanent Address"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                     
+                                        <button class="custom-btn btn-exchange" type="submit"><i class="fa fa-plane"></i> Save</button>
+                                        <button class="custom-btn btn-exchange" type="reset"><i class="fa fa-eraser"></i> Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                   
+
+                </div>
+                <!--/tab-pane-->
+                
+                <!--/tab-pane-->
+                <div class="tab-pane fade" id="nav-needitem3-tab" role="tabpanel" aria-labelledby="nav-needitems3-tab">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="form" action="##" method="post" id="changepassword">
+                                <div class="form-group">
+
+                                    <div class="col-xs-6">
+                                        
+                                        <input type="password" class="form-control border-radius" name="password" id="password" placeholder=" Current Password" title="enter your current password.">
+                                    </div>
+                                </div>
+
+                              
+                                <div class="form-group">
+
+                                    <div class="col-xs-6">
+                                       
+                                        <input type="password" class="form-control border-radius" name="password" id="password" placeholder="New Password" title="enter your new password.">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+
+                                    <div class="col-xs-6">
+                                        
+                                        <input type="password" class="form-control border-radius" name="password2" id="password2" placeholder="Confirm Password" title="enter your password2.">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                     
+                                        <button class="custom-btn btn-exchange" type="submit"><i class="fa fa-plane"></i> Save</button>
+                                        <button class="custom-btn btn-exchange" type="reset"><i class="fa fa-eraser"></i> Reset</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    
+                   
+                </div>
+
+            </div>
+            <!--/tab-pane-->
+        </div>
+        <!--/tab-content-->
+
+    </div>
+    <!--/col-9-->
+</div>
+

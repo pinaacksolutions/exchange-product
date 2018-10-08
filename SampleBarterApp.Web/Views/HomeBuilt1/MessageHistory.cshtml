@@ -1,0 +1,1223 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Exchange - Easy for Exchange Everything</title>
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/web.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en">
+
+    <link href="~/css/NewMessageHistory.css" rel="stylesheet" />
+    <link href="~/css/MessageHistory.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="main-navigation">
+                <nav class="navbar navbar-custom font-weight-bold navbar-expand-md navbar-fixed-top py-md-0 py-lg-0">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <a class="navbar-brand text-white">
+                                Exchange
+                                @*<img src="~/scss/assets/img/1111.png" alt="" height="20px" width="20px" />*@
+                            </a>
+                        </div>
+                        <div id="navbar6" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="/HomeBuilt1/Index" class="text-white">Home</a></li>
+                                <li><a href="/HomeBuilt1/About" class="text-white">About</a></li>
+                                <li><a href="/HomeBuilt1/SafetyTips" class="text-white">Safety Tips</a></li>
+                                <li><a href="/HomeBuilt1/FAQ" class="text-white">FAQ</a></li>
+                                <li><a href="/HomeBuilt1/PrivacyPolicy" class="text-white">Privacy Policy</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button" aria-expanded="false">User Profile </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="/HomeBuilt1/Login">Login</a></li>
+                                        <li><a href="/HomeBuilt1/SignUp">Register</a></li>
+                                        <li><a href="/HomeBuilt1/NewDashBoard">User Dashboard</a></li>
+
+                                    </ul>
+                                </li>
+                                @*<li class="icon-bar">
+                                        <a href="/HomeBuilt1/Login" title="Login" class=" fa fa-sign-in">Login</a>
+                                    </li>
+                                    <li class="icon-bar">
+                                        <a href="/HomeBuilt1/Dashboard" title="User Profile" class=" fa fa-user-circle">SignUp</a>
+                                    </li>*@
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="container margintop">
+            <div class="panel-default">
+                <div class="panel-heading"><h3>Your Message History</h3></div>
+                <div class="panel-body">
+                    <div class="panel messages-panel ">
+                        <div class="contacts-list">
+                            <div class="inbox-categories">
+                                <div data-toggle="tab" data-target="#inbox" class="active"> Inbox </div>
+                                <div data-toggle="tab" data-target="#sent"> Sent </div>
+                                <div data-toggle="tab" data-target="#marked"> Marked </div>
+                                <div data-toggle="tab" data-target="#drafts"> Drafts </div>
+                            </div>
+                            <div class="tab-content">
+                                <div id="inbox" class="contacts-outter-wrapper tab-pane active">
+                                    <form class="panel-search-form info form-group has-feedback no-margin-bottom">
+                                        <input type="text" class="form-control" name="search" placeholder="Search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                    </form>
+                                    <div class="contacts-outter">
+                                        <ul class="list-unstyled contacts">
+                                            <li data-toggle="tab" data-target="#inbox-message-1" class="active">
+                                                <div class="message-count"> 1 </div>
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> John Doe </h3>
+                                                    <h5> Hah, too late, I already bought it and my team is impleting the new design right now.</h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 2:32 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                            <li data-toggle="tab" data-target="#inbox-message-2">
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> John Doe </h3>
+                                                    <h5> Of course, just call me before that, in case I forget. </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 3:56 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                            <li data-toggle="tab" data-target="#inbox-message-3">
+                                                <div class="message-count"> 1 </div>
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> John Doe</h3>
+                                                    <h5> Hey, you asked for my feedback, it's brilliant. Damn, I</h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 5:21 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                            <li data-toggle="tab" data-target="#inbox-message-4">
+                                                <div class="message-count"> 2 </div>
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> John Doe </h3>
+                                                    <h5> And invite Daniel too, please </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 6:13 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="sent" class="contacts-outter-wrapper tab-pane">
+                                    <form class="panel-search-form success form-group has-feedback no-margin-bottom">
+                                        <input type="text" class="form-control" name="search" placeholder="Search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                    </form>
+                                    <div class="contacts-outter">
+                                        <ul class="list-unstyled contacts success">
+                                            <li data-toggle="tab" data-target="#sent-message-1">
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> David Beckham </h3>
+                                                    <h5> I would like to take a look at it this evening, is it possible ? </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 2:24 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                            <li data-toggle="tab" data-target="#sent-message-2">
+                                                <div class="message-count"> 7 </div>
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> Jeff Williams </h3>
+                                                    <h5> Hello, Dennis. I will take a look at it tomorrow, because I'm </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 12:41 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="marked" class="contacts-outter-wrapper tab-pane">
+                                    <form class="panel-search-form warning form-group has-feedback no-margin-bottom">
+                                        <input type="text" class="form-control" name="search" placeholder="Search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                    </form>
+                                    <div class="contacts-outter">
+                                        <ul class="list-unstyled contacts warning">
+                                            <li data-toggle="tab" data-target="#marked-message-1">
+                                                <div class="message-count"> 2 </div>
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> Jessica Franco </h3>
+                                                    <h5> Hello, Dennis. I wanted to let you know we reviewed your proposal and decided  </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 1:44 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                            <li data-toggle="tab" data-target="#marked-message-2">
+                                                <div class="message-count"> 1 </div>
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> Pavel Durov </h3>
+                                                    <h5> Hey, we need your help for our next Telegram re-design. </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 3:23 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="drafts" class="contacts-outter-wrapper tab-pane">
+                                    <form class="panel-search-form dark form-group has-feedback no-margin-bottom">
+                                        <input type="text" class="form-control" name="search" placeholder="Search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                    </form>
+                                    <div class="contacts-outter">
+                                        <ul class="list-unstyled contacts dark">
+                                            <li data-toggle="tab" data-target="#draft-message-1">
+                                                <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                                <div class="vcentered info-combo">
+                                                    <h3 class="no-margin-bottom name"> Milla Shiffman </h3>
+                                                    <h5> Hello, Mila, can you send me the latest pack of icons, I need </h5>
+                                                </div>
+                                                <div class="contacts-add">
+                                                    <span class="message-time"> 4:22 <sup>AM</sup></span>
+                                                    <i class="fa fa-trash-o"></i>
+                                                    <i class="fa fa-paperclip"></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane message-body active" id="inbox-message-1">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Elon Musk </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 2:25 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    I've seen your new template, Dauphin, it's amazing !
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-04.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 2:28 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Thanks, I think I will use this for my next dashboard system.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Elon Musk </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 2:32 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hah, too late, I already bought it and my team is impleting the new design right now.
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="inbox-message-2">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Mark Zuckerberg </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 3:45 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hi, Dennis. How's it going with your latest project?
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-06.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 3:52 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Hello. It's going well, thanks, but I may need your help tomorrow evening. Will you be available ?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Mark Zuckerberg </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 3:56 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Of course, just call me before that, in case I forget.
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-06.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 4:01 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Great, thank you.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="inbox-message-3">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Evan Williams </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 5:07 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hey, you asked for my feedback, it's brilliant. Damn, I envy you I didn't come up with something this good :D Keep it up, man, it's going to be very popular. Trust me !
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 5:16 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Wow, thanks. You'll be my main template tester from now on :)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Evan Williams </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 5:21 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    I'm all in, as long as you continue to make such great templates.
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="inbox-message-4">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Jonahtan Ive </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 6:12 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    I'm coming to your place at 9 pm and I hope you'll have those tasty brownies again :)
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 6:16 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Ye, I still have a bag full of them.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Jonahtan Ive </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 6:12 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Great, we have a lot of work to do and we need fuel :D
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+                                        <div class="message info">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Jonahtan Ive </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 6:13 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    And invite Daniel too, please.
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="sent-message-1">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 2:05 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Hi, I've just finished the stickers you wanted. I'll send them to you in an archive in 10 minutes.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message success">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> David Beckham </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 2:11 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hello, Dennis. Thanks. Also how's it going with our latest football website. Do you need any additional help or information?
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message success">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> David Beckham </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 2:24 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    I would like to take a look at it this evening, is it possible ?
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 2:25 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        It's going well, no need for any other help, thanks. Sure, send me a message when you'll be ready.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="sent-message-2">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 12:36 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Hi, can you please test my new template Dauphin and tell me if you like it ?
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message success">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Jeff Williams </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 12:41 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hello, Dennis. I will take a look at it tomorrow, because I'm already fed up with the current project.
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 12:46 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Thanks :)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="marked-message-1">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+                                        <div class="message warning">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Jessica Fresco </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 1:44 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hello, Dennis. I wanted to let you know we reviewed your proposal and decided you'll start working together with our UI/UX team on Tuesday, January 10th, 2017. Congratulations and thank you!
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 1:51 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Hello, great news. I'm sure we're going to make something amazing together!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="marked-message-2">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+                                        <div class="message warning">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Pavel Durov </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 3:23 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Hey, we need your help for our next Telegram re-design. Are you available to talk about this tomorrow evening at around 8 PM ?
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 3:31 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Hello, yes I will. It's always a pleasure to work with you and your team :)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                        <div class="message warning">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-info">
+                                                    <h4> Pavel Durov </h4>
+                                                    <h5> <i class="fa fa-clock-o"></i> 3:35 PM </h5>
+                                                </div>
+                                                <hr>
+                                                <div class="message-text">
+                                                    Perfect, talk to you tomorrow evening.
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane message-body" id="draft-message-1">
+                                <div class="message-top">
+                                    <a class="btn btn btn-success new-message"> <i class="fa fa-envelope"></i> New Message </a>
+
+                                    <div class="new-message-wrapper">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Send message to...">
+                                            <a class="btn btn-danger close-new-message" href="#"><i class="fa fa-times"></i></a>
+                                        </div>
+
+                                        <div class="chat-footer new-message-textarea">
+                                            <textarea class="send-message-text"></textarea>
+                                            <label class="upload-file">
+                                                <input type="file" required="">
+                                                <i class="fa fa-paperclip"></i>
+                                            </label>
+                                            <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-chat">
+                                    <div class="chat-body">
+
+                                        <div class="message my-message">
+                                            <img alt="" class="img-circle medium-image" src="~/scss/assets/img/author-05.jpg">
+
+                                            <div class="message-body">
+                                                <div class="message-body-inner">
+                                                    <div class="message-info">
+                                                        <h4> Dennis Novac </h4>
+                                                        <h5> <i class="fa fa-clock-o"></i> 4:22 PM </h5>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="message-text">
+                                                        Hello, Mila, can you send me the latest pack of icons, I need all the source files. Thanks.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-footer">
+                                        <textarea class="send-message-text"></textarea>
+                                        <label class="upload-file">
+                                            <input type="file" required="">
+                                            <i class="fa fa-paperclip"></i>
+                                        </label>
+                                        <button type="button" class="send-message-button btn-info"> <i class="fa fa-send"></i> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <a href="#" class="brand">
+                            @*<img src="~/scss/assets/img/logo.png" alt="">*@
+                            <h2>Exchange</h2>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet
+                            fermentum sem.
+                        </p>
+                    </div>
+                    <!--end col-md-5-->
+                    <div class="col-md-3">
+                        <h2>Navigation</h2>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="/HomeBuilt1/Index">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="/HomeBuilt1/WebListingProduct">Listing</a>
+                                        </li>
+                                        <li>
+                                            <a href="/HomeBuilt1/PrivacyPolicy">Privacy Policy</a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <nav>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#">My Ads</a>
+                                        </li>
+                                        <li>
+                                            <a href="/HomeBuilt1/Login">Sign In</a>
+                                        </li>
+                                        <li>
+                                            <a href="/HomeBuilt1/SignUp">Register</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-md-3-->
+                    <div class="col-md-4">
+                        <h2>Contact</h2>
+                        <address>
+                            <figure>
+                                124 Abia Martin Drive<br>
+                                New York, NY 10011
+                            </figure>
+                            <strong>Email:</strong> <a href="#">hello@Exchange.com</a>
+
+                            <strong>Skype: </strong> Exchange
+                            <br>
+
+                            <a href="../../html/craigs/contact.html" class="btn btn-primary text-caps btn-framed">Contact Us</a>
+                        </address>
+                    </div>
+                    <!--end col-md-4-->
+                </div>
+                <!--end row-->
+            </div>
+
+            <!--end background-->
+
+        </footer>
+
+
+
+
+        <div class="container">
+          
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#Inbox">Inbox</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Sent">Sent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#Draft">Draft</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="Inbox" class="container tab-pane active">
+                    <br>
+                    <h3>Inbox Messages</h3>
+                    <div class="container">
+                        <img src="~/scss/assets/img/author-01.jpg" alt="Avatar" style="width:100%;">
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">11:00</span>
+                    </div>
+                    <div class="container darker">
+                        <img src="~/scss/assets/img/author-02.jpg" alt="Avatar" class="right" style="width:100%;">
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">11:01</span>
+                    </div>
+                    <div class="container">
+                        <img src="~/scss/assets/img/author-01.jpg" alt="Avatar" style="width:100%;">
+                        <p>Sweet! So, what do you wanna do today?</p>
+                        <span class="time-right">11:02</span>
+                    </div>
+                    <div class="container darker">
+                        <img src="~/scss/assets/img/author-02.jpg" alt="Avatar" class="right" style="width:100%;">
+                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                        <span class="time-left">11:05</span>
+                    </div>
+                </div>
+                <div id="Sent" class="container tab-pane fade">
+                    <br>
+                    <h3>Sent Messages</h3>
+                    <div class="container">
+                        <img src="~/scss/assets/img/author-01.jpg" alt="Avatar" style="width:100%;">
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">11:00</span>
+                    </div>
+                    <div class="container darker">
+                        <img src="~/scss/assets/img/author-02.jpg" alt="Avatar" class="right" style="width:100%;">
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">11:01</span>
+                    </div>
+                    <div class="container">
+                        <img src="~/scss/assets/img/author-01.jpg" alt="Avatar" style="width:100%;">
+                        <p>Sweet! So, what do you wanna do today?</p>
+                        <span class="time-right">11:02</span>
+                    </div>
+                    <div class="container darker">
+                        <img src="~/scss/assets/img/author-02.jpg" alt="Avatar" class="right" style="width:100%;">
+                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                        <span class="time-left">11:05</span>
+                    </div>
+                </div>
+                <div id="Draft" class="container tab-pane fade">
+                    <br>
+                    <h3>Draft Messages</h3>
+                    <div class="container">
+                        <img src="~/scss/assets/img/author-01.jpg" alt="Avatar" style="width:100%;">
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">11:00</span>
+                    </div>
+                    <div class="container darker">
+                        <img src="~/scss/assets/img/author-02.jpg" alt="Avatar" class="right" style="width:100%;">
+                        <p>Hey! I'm fine. Thanks for asking!</p>
+                        <span class="time-left">11:01</span>
+                    </div>
+                    <div class="container">
+                        <img src="~/scss/assets/img/author-01.jpg" alt="Avatar" style="width:100%;">
+                        <p>Sweet! So, what do you wanna do today?</p>
+                        <span class="time-right">11:02</span>
+                    </div>
+                    <div class="container darker">
+                        <img src="~/scss/assets/img/author-02.jpg" alt="Avatar" class="right" style="width:100%;">
+                        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                        <span class="time-left">11:05</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

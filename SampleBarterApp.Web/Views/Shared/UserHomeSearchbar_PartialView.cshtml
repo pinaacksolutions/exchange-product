@@ -1,0 +1,58 @@
+﻿
+<form class="hero-form form">
+    <div class="container">
+        <!--Main Form-->
+        <div class="pt-4 pb-3">
+            <div class="form-row">
+                <div class="col-md-4 col-sm-3">
+                    <div class="form-group row">
+                        <div class="col-md-12"><label for="what" class="col-form-label">What?</label></div>
+                        <div class="col-md-12"><input name="keyword" type="text" class="form-control border-radius" id="what" placeholder="What are you looking for?"></div>
+                       
+                       
+                    </div>
+                    <!--end form-group-->
+                </div>
+                <!--end col-md-3-->
+                <div class="col-md-4 col-sm-3">
+                    <div class="form-group row">
+                        <div class="col-md-12"><label for="input-location" class="col-form-label">Where?</label></div>
+                        <div class="col-md-12"><input name="location" type="text" class="form-control border-radius" id="input-location" placeholder="Enter Location"></div>
+                        
+                      
+                        @*<span class="geo-location input-group-addon" data-toggle="tooltip" data-placement="top" title="Find My Position"><i class="fa fa-map-marker"></i></span>*@
+                    </div>
+                    <!--end form-group-->
+                </div>
+                <!--end col-md-3-->
+                <div class="col-md-4 col-sm-3">
+                    <div class="form-group row">
+                        <div class="col-md-12"><label for="category" class="col-form-label">Category?</label></div>
+                        <div class="col-md-8">
+                            <select name="category" class="form-control border-radius" id="category" data-placeholder="Select Category">
+                                <option value="">Select Category</option>
+                                <option value="1">Computers</option>
+                                <option value="2">Real Estate</option>
+                                <option value="3">Cars & Motorcycles</option>
+                                <option value="4">Furniture</option>
+                                <option value="5">Pets & Animals</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                           
+                            @*<button class="custom-btn btn-exchange"><i class="fa fa-search"></i> SEARCH</button>*@
+                            <a id="btnsearch" href="/HomeBuilt1/WebListingProduct" class="custom-btn btn-exchange"><i class="fa fa-search"></i> Search</a>
+                        </div>
+
+
+                    </div>
+                    <!--end form-group-->
+                </div>
+              
+            </div>
+            <!--end form-row-->
+        </div>
+        <!--end main-search-form-->
+    </div>
+    <!--end container-->
+</form>

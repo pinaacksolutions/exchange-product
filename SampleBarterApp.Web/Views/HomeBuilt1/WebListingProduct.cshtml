@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "Exchange - Easy for Exchange Everything";
+    Layout = "~/Views/Shared/UserHomeLayoutWithoutSlider _LayoutPage.cshtml";
+}
+
+
+    @*<meta name="viewport" content="width=device-width" />
+    <title>Exchange - Easy for Exchange Everything</title>
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/web.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en">*@
+
+        <div class="bg">
+            <div class="row">
+                <div class="col-sm-3 py-3 ">
+                    @Html.Partial("UserHomeSideBar_PartialView")
+                </div>
+
+                <div class="col-sm-9 py-3 ">
+                    <div class="card">
+                        <div class="card-header text-center"><h5>Products </h5></div>
+                        <div class="card-body p-4">
+                            <h5 class="mb-4">Filtered Products</h5>
+                            <div class="item row card-deck cardborder">
+                                <div class="card bg-secondary text-white width-200px img-rounded">
+                                    <img class="card-img-top img-circle" src="~/scss/assets/img/image-01.jpg" height="150" width="100" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text new.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px img-rounded">
+                                    <img class="card-img-top img-circle" src="~/scss/assets/img/image-02.jpg" height="150" width="100" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white  width-200px img-rounded">
+                                    <img class="card-img-top img-circle" src="~/scss/assets/img/image-03.jpg" height="150" width="100" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px img-rounded">
+                                    <img class="card-img-top img-circle" src="~/scss/assets/img/image-04.jpg" height="150" width="100" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px img-rounded">
+                                    <img class="card-img-top img-circle" src="~/scss/assets/img/image-05.jpg" height="150" width="100" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item row card-deck cardborder  py-4">
+                                <div class="card bg-secondary   text-white  width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-06.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-07.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-08.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="#" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-09.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-10.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="item row card-deck cardborder  py-4">
+                                <div class="card bg-secondary   text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-11.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-12.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-13.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-14.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.aaaa</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card bg-secondary text-white width-200px">
+                                    <img class="card-img-top" src="~/scss/assets/img/image-15.jpg" alt="Card image">
+                                    <div class="card-body p-2 text-center">
+                                        <h5 class="card-title">John Doe</h5>
+                                        <p class="card-text">Some example text.</p>
+                                        <a href="/HomeBuilt1/ProductDetails" class="btn btn-primary">See Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       

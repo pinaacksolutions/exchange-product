@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/customize/css/mycss.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/customize/js/Myjs.js"></script>
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en">
+</head>
+<body class="fontweb">
+    <section id="header">
+      @Html.Partial("UserHomeNavbar_PartialView")
+    </section>
+    <section id="Slider">
+        @Html.Partial("UserHomeSlider_PartialView")
+    </section>
+    <section id="SearchBar">
+        <div class="container-fluid" style="background-color:#ecece8">
+            <section class="align-content-center">@Html.Partial("UserHomeSearchbar_PartialView")</section>
+                
+</div>
+       
+    </section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 py-3">
+                @Html.Partial("UserHomeSideBar_PartialView")
+            </div>
+            <div class="col-sm-9 py-3">
+                @RenderBody()
+            </div>
+        </div>
+   
+    </div>
+    <section id="footer">
+        @Html.Partial("UserHomeFooterPartialView")
+    </section>
+</body>
+</html>

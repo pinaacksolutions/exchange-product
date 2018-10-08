@@ -1,0 +1,206 @@
+﻿@{
+    ViewBag.Title = "AddProduct";
+    Layout = "~/Views/Shared/UserDashboard_LayoutPage1.cshtml";
+}
+
+
+<div class="container-fluid mb-4">
+    <div class="card mb-4">
+        <div class="card-body pb-2 pt-2">
+            <div class="row">
+                <div class="col-md-4"><h4 class="pb-0">Add New Product</h4></div>
+                <div class="col-md-8 text-right mt-1">
+                    @Html.ActionLink("Details", "ProductDetail", "HomeBuilt1")
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body pt-1">
+                    <div class="row">
+                        <div class="col-md-12 mt-4 mb-4">
+                            <h4 class="align-center-details mb-3 mt-3"><span class="align-center-span" style="font-size:26px; background-color:white;">Post Your Item</span></h4>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <label for="txtproducttitle" class="col-md-4 col-form-label"><strong>Product Title</strong></label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control border-radius" id="txtproducttitle" name="ProductTitle">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="ddlcategory" class="col-md-4 col-form-label control-label"><strong>Category</strong></label>
+                                        <div class="col-md-8">
+                                            <select class="form-control border-radius" id="ddlcategory">
+                                                <option value="0">-Select Category-</option>
+                                                <option value="1">Bikes</option>
+                                                <option value="2">Car</option>
+                                                <option value="3">Mobiles</option>
+                                                <option value="4">Other</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="ddlsubcategory" class="col-md-4 col-form-label"><strong>Sub Category</strong></label>
+                                        <div class="col-md-8">
+                                            <select class="form-control border-radius" id="ddlsubcategory">
+                                                <option value="0">-Select Sub Category-</option>
+                                                <option value="1">Spare Parts</option>
+                                                <option value="2">Motorcycles</option>
+                                                <option value="3">Scooters</option>
+                                                <option value="4">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="txtdescription" class="col-md-4 col-form-label"><strong>Description</strong></label>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control border-radius" id="txtdescription" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="pwd" class="col-md-4 col-form-label"><strong>Exchange Process</strong></label>
+                                        <div class="col-md-8">
+                                            <div class="mt-2">
+                                                <input type="radio" class="cursor-pointer" onclick="showHideNeedItemSection();" name="procee" id="need" value="NeedItems">&nbsp;Need Items &nbsp;
+                                                <input type="radio" class="cursor-pointer" onclick="showHideNeedItemSection();" name="procee" id="notneed" value="Donotneed">&nbsp;Don't Need &nbsp;
+                                                <input type="radio" class="cursor-pointer" onclick="showHideNeedItemSection();" name="procee" id="others" value="Other">&nbsp;Other &nbsp;
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="align-left">
+                                        <div class="form-group row">
+                                            <label class="control-label col-md-4"> <strong>Upload Image</strong></label>
+                                            <div class="col-md-8">
+                                                <div id="coba" class="row">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-4" id="Needitems" style="display:none">
+                             
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="align-center-details mb-5"><span class="align-center-span" style="font-size:26px; background-color:white;">What you want instead</span></h4>
+                                    </div>
+                                  
+                                    <div class="col-md-6 pl-0">
+                                        <div class="form-group row">
+                                            <label for="txtproducttitle" class="col-md-4 col-form-label"><strong>Product Title</strong></label>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control border-radius" id="add-name" name="ProductTitle">
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="ddlcategory" class="col-md-4 col-form-label"><strong>Category</strong></label>
+                                            <div class="col-md-8">
+                                                <select class="form-control border-radius" id="ddlcategory">
+                                                    <option value="0">-Select Category-</option>
+                                                    <option value="1">Bikes</option>
+                                                    <option value="2">Car</option>
+                                                    <option value="3">Mobiles</option>
+                                                    <option value="4">Other</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="ddlsubcategory" class="col-md-4 col-form-label"><strong>Sub Category</strong></label>
+                                            <div class="col-md-8">
+                                                <select class="form-control border-radius" id="ddlsubcategory">
+                                                    <option value="0">-Select Sub Category-</option>
+                                                    <option value="1">Spare Parts</option>
+                                                    <option value="2">Motorcycles</option>
+                                                    <option value="3">Scooters</option>
+                                                    <option value="4">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="txtdescription" class="col-md-4 col-form-label"><strong>Description</strong></label>
+                                            <div class="col-md-8">
+                                                <textarea class="form-control border-radius" id="txtdescription" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field form-group row">
+                                            <label class="col-md-4 col-form-label"><strong>Upload Image</strong></label>
+                                            <div class="col-md-8">
+                                                <input type="file" class="cursor-pointer" id="files" name="files[]" multiple />
+                                            </div>
+                                        </div>
+                                   
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <div class="form-group row">
+                                            <div class="col-md-12 text-left">
+                                                <button type="submit" class="custom-btn btn-exchange cursor-pointer"><i class="fa fa-paper-plane"></i> ADD</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p  class="text-right" ><strong id="counter"></strong></p>
+                                        <table class="table  table-condensed table-hover">
+                                            <tr>
+                                                <th>Product Title</th>
+                                                <th>Category</th>
+                                                <th>Sub Category</th>
+                                                <th>Description</th>
+                                                <th>Image</th>
+                                                <th></th>
+                                            </tr>
+                                            <tbody id="countries"></tbody>
+                                        </table>
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="col-md-12">
+                            <hr class="theme-hr-color" />
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="custom-btn btn-exchange cursor-pointer"><i class="fa fa-paper-plane"></i> SUBMIT</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,881 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="ThemeStarz">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="~/scss/assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/scss/assets/fonts/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="~/scss/assets/css/selectize.css" type="text/css">
+    <link rel="stylesheet" href="~/scss/assets/css/style.css">
+    <link rel="stylesheet" href="~/scss/assets/css/user.css">
+    <title>Exchange - Easy for Exchange Everything</title>
+</head>
+<body>
+    <div class="page home-page">
+        <header class="hero has-dark-background">
+            <div class="hero-wrapper">
+                <!--============ Secondary Navigation ===============================================================-->
+                @*<div class="secondary-navigation">
+                    <div class="container">
+
+                         <!--end left-->
+                         <ul class="right">
+                             <li>
+                                 <a href="../../html/craigs/sign-in.html">
+                                     <i class="fa fa-sign-in"></i>Login
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="../../html/craigs/register.html">
+                                     <i class="fa fa-pencil-square-o"></i>Register
+                                 </a>
+                             </li>
+                         </ul>
+                         <!--end right-->
+                     </div>
+                     <!--end container-->
+                                </div>*@
+
+                <!--============ End Secondary Navigation ===========================================================-->
+                <!--============ Main Navigation ====================================================================-->
+
+                <div class="main-navigation">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                            <a class="navbar-brand" href="~/WebHome/Index.cshtml">
+                                @*<img src="~/scss/assets/img/logo-inverted.png" alt="">*@
+                                <img src="~/scss/assets/img/1111.png" alt="" height="20px" width="20px" />
+                                @*Exchange Logo*@
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar">
+                                <!--Main navigation list-->
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                        @*style="color:black";*@
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Safety Tips</a>
+                                        <!-- 1st level -->
+                                        <!-- end 1st level -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">FAQ</a>
+                                        <!-- 2nd level -->
+                                        <!-- end 2nd level -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Privacy Policy</a>
+                                        <!--1st level -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Site Map</a>
+                                        <!--1st level -->
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog</a>
+                                        <!--1st level -->
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../html/craigs/contact.html">Contact</a>
+                                    </li>
+                                    @*<li class="nav-item">
+                                            <a href="../../html/craigs/submit.html" class="btn btn-primary text-caps btn-rounded">Submit Ad</a>
+                                        </li>*@
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../html/craigs/sign-in.html">
+                                            <i class="fa fa-sign-in"></i>Login
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../../html/craigs/register.html">
+                                            <i class="fa fa-pencil-square-o"></i>Register
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <!--Main navigation list-->
+                            </div>
+                            <!--end navbar-collapse-->
+
+                        </nav>
+
+                        <!--end navbar-->
+
+                    </div>
+                    <!--end container-->
+                </div>
+                <div class="background">
+                    <div class="background-image">
+                        @*<img src="~/scss/assets/img/images.jpg" alt="">*@
+                        <img src="~/scss/assets/img/headerimage.jpg" alt="" />
+                        @*<img src="~/scss/assets/img/hero-background-image-01PNG.png" alt="" />*@
+
+                    </div>
+                    <!--end background-image-->
+                </div>
+            </div>
+
+        </header>
+
+        <section class="content">
+            <div class="center">
+                @*<h1> Here You can Exchange and You can Find What You Need</h1>*@
+                <h1>You Can Exchange With Which You Want </h1>
+                @*<h1>Exchange Your Extra Stuff At Free</h1>*@
+            </div>
+            <form class="hero-form form">
+                <div class="container">
+                    <!--Main Form-->
+                    <div class="main-search-form">
+                        <div class="form-row">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="form-group">
+                                    <label for="what" class="col-form-label">What?</label>
+                                    <input name="keyword" type="text" class="form-control" id="what" placeholder="What are you looking for?">
+                                </div>
+                                <!--end form-group-->
+                            </div>
+                            <!--end col-md-3-->
+                            <div class="col-md-3 col-sm-3">
+                                <div class="form-group">
+                                    <label for="input-location" class="col-form-label">Where?</label>
+                                    <input name="location" type="text" class="form-control" id="input-location" placeholder="Enter Location">
+                                    @*<span class="geo-location input-group-addon" data-toggle="tooltip" data-placement="top" title="Find My Position"><i class="fa fa-map-marker"></i></span>*@
+                                </div>
+                                <!--end form-group-->
+                            </div>
+                            <!--end col-md-3-->
+                            <div class="col-md-3 col-sm-3">
+                                <div class="form-group">
+                                    <label for="category" class="col-form-label">Category?</label>
+                                    <select name="category" id="category" data-placeholder="Select Category">
+                                        <option value="">Select Category</option>
+                                        <option value="1">Computers</option>
+                                        <option value="2">Real Estate</option>
+                                        <option value="3">Cars & Motorcycles</option>
+                                        <option value="4">Furniture</option>
+                                        <option value="5">Pets & Animals</option>
+                                    </select>
+                                </div>
+                                <!--end form-group-->
+                            </div>
+                            <!--end col-md-3-->
+                            <div class="col-md-3 col-sm-3">
+                                <button id="btnsearch" type="submit" class="btn btn-primary width-100">Search</button>
+                            </div>
+                            <!--end col-md-3-->
+                        </div>
+                        <!--end form-row-->
+                    </div>
+                    <!--end main-search-form-->
+                </div>
+                <!--end container-->
+            </form>
+            <div class="background">
+                <div class="background-image">
+                    @*<img src="~/scss/assets/img/hero-background-image-01.jpg" alt="">*@
+                    <img src="~/scss/assets/img/hero-background-image-01PNG.png" alt="" />
+
+                </div>
+                <!--end background-image-->
+            </div>
+        </section>
+        <section>
+            <!--============ Latest Uploaded ===========================================================================-->
+            <section>
+                <div class="block">
+                    <h2>Latest Uploaded</h2>
+                    <div class="items grid grid-xl-5-items grid-lg-3-items grid-md-2-items">
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                    </div>
+                </div>
+            </section>
+            <!--============ End Latest Uploaded =======================================================================-->
+            <!--============ Recent Ads =============================================================================-->
+            <section class="container">
+                <div class="block">
+                    <h2>Recent Most Viewed</h2>
+                    <div class="items grid grid-xl-5-items grid-lg-3-items grid-md-2-items">
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="ribbon-featured">Featured</div>
+                            <!--end ribbon-->
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Offer</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Offer</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Offer</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Offer</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Demand</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Offer</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                        <span class="tag">Demand</span>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                    </div>
+                </div>
+                <!--end container-->
+            </section>
+            <!--end block-->
+            <!--============ End Recent Ads =========================================================================-->
+            <!--============ Latest Uploaded ===========================================================================-->
+            <section class="block">
+                <div class="container">
+                    <h2>Our Sucess Story</h2>
+                    <div class="items grid grid-xl-5-items grid-lg-3-items grid-md-2-items">
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                        <div class="item">
+
+                            <div class="card">
+                                <div class="image">
+                                    <a href="../../html/craigs/single-listing-1.html" class="image-wrapper background-image">
+                                        <img src="~/scss/assets/img/image-01.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis lobortis</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer"><a href="../../html/craigs/single-listing-1.html" class="detail text-caps underline">Detail</a></div>
+                            </div>
+
+
+                        </div>
+                        <!--end item-->
+                    </div>
+                </div>
+            </section>
+            <!--============ End Latest Uploaded =======================================================================-->
+        </section>
+        <!--end content-->
+        <!--*********************************************************************************************************-->
+        <!--************ FOOTER *************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <footer>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <a href="#" class="brand">
+                                @*<img src="~/scss/assets/img/logo.png" alt="">*@
+                                <h2>Exchange</h2>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet
+                                fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+                            </p>
+                        </div>
+                        <!--end col-md-5-->
+                        <div class="col-md-3">
+                            <h2>Navigation</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <nav>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Listing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Pages</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Extras</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Contact</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Submit Ad</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <nav>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">My Ads</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sign In</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Register</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-md-3-->
+                        <div class="col-md-4">
+                            <h2>Contact</h2>
+                            <address>
+                                <figure>
+                                    124 Abia Martin Drive<br>
+                                    New York, NY 10011
+                                </figure>
+                                <br>
+                                <strong>Email:</strong> <a href="#">hello@Exchange.com</a>
+                                <br>
+                                <strong>Skype: </strong> Exchange
+                                <br>
+                                <br>
+                                <a href="../../html/craigs/contact.html" class="btn btn-primary text-caps btn-framed">Contact Us</a>
+                            </address>
+                        </div>
+                        <!--end col-md-4-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <div class="background">
+                    <div class="background-image original-size">
+                        <img src="~/scss/assets/img/footer-background-icons.jpg" alt="">
+                    </div>
+                    <!--end background-image-->
+                </div>
+                <!--end background-->
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <script src="~/scss/assets/js/jquery-3.2.1.min.js"></script>
+
+    <script type="text/javascript" src="~/scss/assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script src="~/scss/assets/js/selectize.min.js"></script>
+
+    <script src="~/scss/assets/js/icheck.min.js"></script>
+
+    <script src="~/scss/assets/js/custom.js"></script>
+</body>
+</html>

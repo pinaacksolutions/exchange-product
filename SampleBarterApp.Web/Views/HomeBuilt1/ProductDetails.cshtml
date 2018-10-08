@@ -1,0 +1,742 @@
+﻿@{
+    ViewBag.Title = "Exchange - Easy for Exchange Everything";
+    Layout = "~/Views/Shared/UserHomeLayoutWithoutSlider _LayoutPage.cshtml";
+}
+
+    <section id="content" class="mb-5">
+        <div class="container-fluid">
+
+            <div class="row product-slide">
+                <div class="col-md-12">
+
+                    <div class="row mt-4 pb-4">
+                        <div class="col-md-6">
+
+                            <div class="row m-3">
+                                <div class="col-md-12">
+                                    <h2 class="align-center-details mb-4"><span class="align-center-span" style="font-size:26px; background-color:white;">What I Have</span></h2>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12 text-center">
+                                            <img class="xzoom view-image-width text-right" id="xzoom-default" src="~/customize/img/engine1.jpg" xoriginal="~/customize/img/engine1.jpg" />
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <a href="~/customize/img/engine1.jpg"><img class="xzoom-gallery height" width="80" src="~/customize/img/engine1.jpg" xpreview="~/customize/img/engine1.jpg"></a>
+                                            <a href="~/customize/img/engine4.jpg"><img class="xzoom-gallery height" width="80" src="~/customize/img/engine4.jpg"></a>
+                                            <a href="~/customize/img/engine5.jpg"><img class="xzoom-gallery height" width="80" src="~/customize/img/engine5.jpg"></a>
+                                            <a href="~/customize/img/engine4.jpg"><img class="xzoom-gallery height" width="80" src="~/customize/img/engine4.jpg"></a>
+                                            <a href="~/customize/img/engine5.jpg"><img class="xzoom-gallery height" width="80" src="~/customize/img/engine5.jpg"></a>
+                                            @*<div class="large-7 column"></div>*@
+                                        </div>
+
+                                    </div>
+
+
+                                    @*<div id="mainContainer">
+                                        <div id="leftNav">
+                                            <img src="~/customize/img/image-01.jpg" class="image-width" alt="image-01.jpg" title="image-01.jpg" onclick="showImage('image-01.jpg');" />
+                                            <br />
+                                            <img src="~/customize/img/image-02.jpg" class="image-width" alt="image-02.jpg" title="image-02.jpg" onclick="showImage('image-02.jpg');" />
+                                            <br />
+                                            <img src="~/customize/img/image-03.jpg" class="image-width" alt="image-03.jpg" title="image-03.jpg" onclick="showImage('image-03.jpg');" />
+                                            <br />
+                                            <img src="~/customize/img/image-04.jpg" class="image-width" alt="image-04.jpg" title="image-04.jpg" onclick="showImage('image-04.jpg');" />
+                                            <br />
+                                            <img src="~/customize/img/image-05.jpg" class="image-width" alt="image-05.jpg" title="image-05.jpg" onclick="showImage('image-05.jpg');" />
+
+                                        </div>
+                                        <div id="rightDisplay">
+                                            <img id="currentImg" src="~/customize/img/image-01.jpg" class="view-image-width img-fluid" alt="image-01.jpg" title="image-01.jpg" />
+
+                                        </div>
+                                        <div id="myModal" class="modal">
+                                            <span class="close">&times;</span>
+                                            <img class="modal-content" id="img01">
+
+                                        </div>
+                                    </div>*@
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-left">
+                                        <div class="text-center">
+                                            <h3 class="font-color">Engine</h3>
+                                            <p class="font-color-content">Maruti Car Engine</p>
+                                        </div>
+                                        <div class="pt-2 font-color-content">
+
+                                            <h4 class="align-center-details mb-4"><span class="align-center-span">PRODUCT DETAILS </span></h4>
+                                            <ul style="list-style:none;" class="pl-0">
+                                                <li><b> Bill:</b> No</li>
+                                                <li><b> Guarantee:</b> No</li>
+                                                <li><b>Warranty:</b> No</li>
+                                                <li><b>Purchase Date:</b> 05.04.2017</li>
+
+
+                                            </ul>
+
+                                        </div>
+                                        @*<div class="pt-2">
+                                            <button class="custom-btn btn-exchange"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button> &nbsp;&nbsp;
+                                            <button class="custom-btn btn-exchange-transparent"><i class="fa fa-sign-in"></i> LOGIN</button>
+                                        </div>*@
+
+                                    </div>
+                                    <div>
+
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                                <div class="col-md-12">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" style="border-bottom: none;" role="tablist">
+                                            <button class="nav-item nav-link active" style="background-color: #796AEE; border: none; color: white;" id="haveitem-tab" data-toggle="tab" href="#nav-haveitem" role="tab" aria-controls="nav-haveitem" aria-selected="true">Description</button>
+                                            @*<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>*@
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent" style="border: 1px solid #796AEE;">
+                                        <div class="tab-pane fade show active" id="nav-haveitem" role="tabpanel" aria-labelledby="haveitem-tab">
+                                            <p class="p-3 text-justify">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                            </p>
+                                        </div>
+                                        @*<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos</div>
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos</div>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="row m-3">
+                                <div class="col-md-12">
+                                    <h2 class="align-center-details mb-4"><span class="align-center-span" style="font-size:26px; background-color:white;">What I Need</span></h2>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div>
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" style="" role="tablist">
+                                                <button class="nav-item nav-link p-3 active cursor-pointer" style="background: none; border: 1px solid #dee2e6" id="nav-needitems1-tab" data-toggle="tab" href="#nav-needitem1-tab" role="tab" aria-controls="nav-needitem1-tab" aria-selected="true"><strong>Scorpio Engine</strong></button>
+                                                <button class="nav-item nav-link p-3 cursor-pointer" style="background: none; border: 1px solid #dee2e6" id="nav-needitems2-tab" data-toggle="tab" href="#nav-needitem2-tab" role="tab" aria-controls="nav-needitem2-tab" aria-selected="false"><strong>Honda City Side Glass</strong></button>
+                                                <button class="nav-item nav-link p-3 cursor-pointer" id="nav-needitems3-tab" style="background: none; border: 1px solid #dee2e6" data-toggle="tab" href="#nav-needitem3-tab" role="tab" aria-controls="nav-needitem3-tab" aria-selected="false"><strong>Scorpio Side Glass</strong></button>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent" style="border: 1px solid #796AEE; height: 360px;">
+                                            <div class="tab-pane fade show active" id="nav-needitem1-tab" role="tabpanel" aria-labelledby="nav-needitems1-tab">
+                                                <div class="row p-3 mb-2">
+
+                                                    <div class="col-md-3 mb-3">
+                                                        <img src="~/customize/img/engine2.jpg" style="height:150px; width:150px;" />
+                                                    </div>
+                                                    <div class="col-md-9 mb-2">
+                                                        <div class="text-center mt-2">
+                                                            <h3 class="align-center-details mb-4"><span class="align-center-span">PRODUCT DETAILS</span></h3>
+                                                            <h3 class="font-color">Engine</h3>
+                                                            <p class="font-color-content">Scorpio Car Engine</p>
+                                                            <div class="pt-2">
+                                                                <button class="custom-btn btn-exchange cursor-pointer"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button> &nbsp;&nbsp;
+                                                                <button class="custom-btn btn-exchange-transparent cursor-pointer" id="loginbtn"><i class="fa fa-sign-in"></i> LOGIN</button>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos </p>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-needitem2-tab" role="tabpanel" aria-labelledby="nav-needitems2-tab">
+                                                <div class="row p-3">
+                                                    @*<div class="col-12">
+                                                        <h3 class="align-center-details mb-4"><span class="align-center-span">Description</span></h3>
+                                                    </div>*@
+                                                    <div class="col-md-4 text-center">
+                                                        <h3 class="font-color text-center pb-1">Engine</h3>
+                                                        <img src="~/customize/img/glass.jpeg" style="height:150px; width:150px;" />
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="pt-4">
+                                                            <p class="font-color-content text-center"><strong>Honda City Side Glass</strong></p>
+                                                            <div class="pt-2">
+                                                                <button class="custom-btn btn-exchange cursor-pointer"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button> &nbsp;&nbsp;
+                                                                <button class="custom-btn btn-exchange-transparent cursor-pointer"><i class="fa fa-sign-in"></i> LOGIN</button>
+                                                            </div>
+                                                            <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu. </p>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-needitem3-tab" role="tabpanel" aria-labelledby="nav-needitems3-tab">
+                                                <div class="row p-3">
+                                                    <div class="col-12">
+                                                        <h3 class="align-center-details mb-4"><span class="align-center-span">Description</span></h3>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <img src="~/customize/img/glass.jpeg" style="height:150px; width:150px;" />
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <p class="font-color-content text-center"><strong> Scorpio Side Glass</strong></p>
+                                                        <div class="pt-2">
+                                                            <button class="custom-btn btn-exchange cursor-pointer"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button> &nbsp;&nbsp;
+                                                            <button class="custom-btn btn-exchange-transparent cursor-pointer"><i class="fa fa-sign-in"></i> LOGIN</button>
+                                                        </div>
+                                                        <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt, sapien sagittis sollicitudin dapibus, risus mi euismod elit, in dictum justo lacus sit amet dui. Sed faucibus vitae nisl at dignissim. Ut nec tincidunt arcu, sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Inceptos </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6 mt-2">
+                                            <div class="card">
+                                                <div class="card-header p-2">
+                                                    About the Seller
+                                                    <div style="display:inline-block;float:right;"><button style="color: #796AEE;" class="convert-link-to-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle"></i> Detail</button></div>
+
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    @*<div class="dashboardBoxBg mb30">
+                                                        *@
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div class="profileImage">
+                                                                    <img src="~/customize/img/User-dummy.png" alt="Image User" class="img-circle-user mt-0 mb-0">
+                                                                    <p>Jack Sparrow</p>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                                <div class="profileUserInfo profileName">
+                                                                    <div>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star checked"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                        <span class="fa fa-star"></span>
+                                                                    </div>
+                                                                    <h6>Verification level</h6>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:45%">45%</div>
+                                                                    </div>
+                                                                    <br />
+
+                                                                    @*<a href="#" class="custom-btn btn-exchange">Detail</a>*@
+                                                                    @*<button class="custom-btn btn-exchange"><i class="fa fa-paper-plane"></i> REQUEST FOR ITEM</button>*@
+
+
+                                                                </div>
+                                                            </div>
+                                                            @*<div class="col-md-12 text-center">
+                                                                <button class="custom-btn btn-exchange"><i class="fa fa-paper-plane"></i> Message</button>
+
+                                                            </div>*@
+                                                        </div>
+
+
+
+                                                        @*
+                                                    </div>*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mt-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <textarea rows="4" class="form-control input-sm border-radius" placeholder="Type your message here..."></textarea>
+
+                                                </div>
+                                                <div class="col-md-12 mt-2 text-right">
+                                                    <span class="input-group-btn">
+                                                        <button class="custom-btn btn-exchange btn-block cursor-pointer" id="btn-chat">
+                                                            <i class="fa fa-paper-plane"></i> SEND
+                                                        </button>
+
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-4 p-4">
+                <div class="col-md-12">
+                    <h2 class="align-center-details mb-4"><span class="align-center-span" style="font-size:26px; background-color:white;">SIMILAR PICKS</span></h2>
+                </div>
+                @*<div class="col-md-2"><h2 class="align-center-details mb-4"><span class="align-center-span" style="font-size:26px; background-color:white;">ADDS</span></h2></div>*@
+            </div>
+
+            <div class="container-fluid">
+                <div class="card-deck">
+                    
+                    @*<div class="col-md-2">*@
+                        <div class="card card-test bg-card-color Zoom-animation">
+                            <img class="card-img-top card-image-height" src="~/customize/img/engine1.jpg" alt="Card image">
+                            <div class="card-body text-center p-2 pb-3">
+                                <span class="mt-1 product-title">Honda City 1.5 V Mt,car engine</span><br>
+                                <span class="product-category" >Automobile</span><br>
+                                <span class="product-subcategory">Spare Parts</span>
+                                <p class="mb-0">
+                                    <a href="/HomeBuilt1/ProductDetails"  class="custom-btn btn-exchange btn-block quick-view">Quick View</a>
+                                    @*<div style="display:inline-block;float:right;"><a href="#"><i class="fa fa-info-circle"></i> Detail</a></div>*@
+                                </p>
+                            </div>
+                        </div>
+
+                    @*</div>*@
+                    @*<div class="col-md-2">*@
+                        <div class="card card-test bg-card-color Zoom-animation">
+                            <img class="card-img-top card-image-height" src="~/customize/img/engine1.jpg" alt="Card image">
+                            <div class="card-body text-center p-2 pb-3">
+                                <span class="mt-1 product-title">Honda City 1.5 V Mt, 2014, car engine</span><br>
+                                <span class="product-category">Automobile</span><br>
+                                <span class="product-subcategory">Spare Parts</span>
+                                <p class="mb-0">
+                                    <a href="/HomeBuilt1/ProductDetails" class="custom-btn btn-exchange btn-block quick-view">Quick View</a>
+                                    @*<div style="display:inline-block;float:right;"><a href="#"><i class="fa fa-info-circle"></i> Detail</a></div>*@
+                                </p>
+                            </div>
+                        </div>
+
+                    @*</div>*@
+                    @*<div class="col-md-2">*@
+                        <div class="card card-test bg-card-color Zoom-animation">
+                            <img class="card-img-top card-image-height" src="~/customize/img/engine5.jpg" alt="Card image">
+                            <div class="card-body text-center p-2 pb-3">
+                                <span class="mt-1 product-title">Honda City 1.5 V Mt, 2014, car engine</span><br>
+                                <span class="product-category">Automobile</span><br>
+                                <span class="product-subcategory">Spare Parts</span>
+                                <p class="mb-0">
+                                    <a href="/HomeBuilt1/ProductDetails" class="custom-btn btn-exchange btn-block quick-view">Quick View</a>
+                                    @*<div style="display:inline-block;float:right;"><a href="#"><i class="fa fa-info-circle"></i> Detail</a></div>*@
+                                </p>
+                            </div>
+                        </div>
+
+                    @*</div>*@
+                    @*<div class="col-md-2">*@
+                        <div class="card card-test bg-card-color Zoom-animation">
+                            <img class="card-img-top card-image-height" src="~/customize/img/engine4.jpg" alt="Card image">
+                            <div class="card-body text-center p-2 pb-3">
+                                <span class="mt-1 product-title">Honda City 1.5 V Mt, 2014, car engine</span><br>
+                                <span class="product-category">Automobile</span><br>
+                                <span class="product-subcategory">Spare Parts</span>
+                                <p class="mb-0">
+                                    <button href="#" class="custom-btn btn-exchange btn-block quick-view">Quick View</button>
+                                    @*<div style="display:inline-block;float:right;"><a href="#"><i class="fa fa-info-circle"></i> Detail</a></div>*@
+                                </p>
+                            </div>
+                        </div>
+
+                    @*</div>*@
+                    @*<div class="col-md-2">*@
+                        <div class="card card-test bg-card-color Zoom-animation">
+                            <img class="card-img-top card-image-height" src="~/customize/img/engine2.jpg" alt="Card image">
+                            <div class="card-body text-center p-2 pb-3">
+                                <span class="mt-1 product-title">Honda City 1.5 V Mt, 2014, car engine</span><br>
+                                <span class="product-category">Automobile</span><br>
+                                <span class="product-subcategory">Spare Parts</span>
+                                <p class="mb-0">
+                                    <button href="#" class="custom-btn btn-exchange btn-block quick-view">Quick View</button>
+                                    @*<div style="display:inline-block;float:right;"><a href="#"><i class="fa fa-info-circle"></i> Detail</a></div>*@
+                                </p>
+                            </div>
+                        </div>
+
+                    @*</div>*@
+                    @*<div class="col-md-2">*@
+                        <div class="card card-test bg-card-color Zoom-animation">
+                            <img class="card-img-top card-image-height" src="~/customize/img/engine3.jpg" alt="Card image">
+                            <div class="card-body text-center p-2 pb-3">
+                                <span class="mt-1 product-title">Honda City 1.5 V Mt, 2014, car engine</span><br>
+                                <span class="product-category">Automobile</span><br>
+                                <span class="product-subcategory">Spare Parts</span>
+                                <p class="mb-0">
+                                    <button href="#" class="custom-btn btn-exchange btn-block quick-view">Quick View</button>
+                                    @*<div style="display:inline-block;float:right;"><a href="#"><i class="fa fa-info-circle"></i> Detail</a></div>*@
+                                </p>
+                            </div>
+                        </div>
+
+                    @*</div>*@
+                </div>
+                <div class="row m-3">
+                    <div class="col-md-12">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-4 p-4">
+                <div class="col-md-12">
+                    <h2 class="align-center-details mb-4"><span class="align-center-span" style="font-size:26px; background-color:white;">USER COMMENTS</span></h2>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <div class="panel-heading panel" id="accordion">
+                            <span class="glyphicon glyphicon-comment"></span> COMMENT
+                            <div class="btn-group pull-right">
+                                <button type="button" class="custom-btn btn-exchange" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <span class="fa fa-chevron-down"></span>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="panel-collapse collapse show p-3" style="background-color: white;" id="collapseOne">
+                            <div class="panel-body">
+                                <ul class="chat">
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>12 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item red-tooltip" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item red-tooltip" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix test" id="test1">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item red-tooltip" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix test">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item red-tooltip" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix test">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                        </span>
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                    <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                dolor, quis ullamcorper ligula sodales.
+                                            </p>
+                                            <div class="stats">
+                                                @*<a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-up icon"></i>2
+                                                </a>
+                                                <a href="#" class="btn btn-default stat-item">
+                                                    <i class="fa fa-thumbs-down icon"></i>12
+                                                </a>*@
+                                                <a href="#" class="btn btn-default stat-item red-tooltip" data-toggle="tooltip" title="COMPLAINT">
+                                                    <i class="fa fa-user-times complaint-color"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li style="border-bottom: none;"><button id="btnshow" class="convert-link-to-btn" onclick="seemore()">See More</button></li>
+                                </ul>
+                            </div>
+                            @*<div class="panel-footer">
+                                <div class="input-group">
+                                    <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                    <span class="input-group-btn">
+                                        <button class="custom-btn btn-exchange" id="btn-chat">
+                                            <i class="fa fa-paper-plane"></i> SUBMIT
+                                        </button>
+
+                                    </span>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+
+            </div>
+            <div class="modal fade" id="myModal" data-backdrop="false">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">About the Seller</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="profileImage">
+
+                                            <img src="~/customize/img/User-dummy.png" alt="Image User" class="img-circle-user">
+
+                                        </div>
+                                        <div class="profileUserInfo bt profileName">
+                                            <h6>Verification level</h6>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div>
+                                            <div>
+                                                <strong class="font-color">Jack Sparrow</strong>  <div style="display:inline-block; float:right;">
+                                                    <a>Udaipur,Rajasthan</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star"></span>
+                                                <span class="fa fa-star"></span>
+                                            </div>
+                                            <br />
+                                            <div style="background: #f7f7f7; border-radius: 7px;" class="p-2">
+                                                <div>
+                                                    <span class="m-1"><strong>Phone-</strong></span>
+                                                    <span> +1 516-480-4273</span>
+                                                </div>
+
+                                                <div>
+                                                    <span class="m-1"><strong>Email-</strong></span>
+                                                    <span> <a>hello@example.com</a></span>
+                                                </div>
+
+                                                <div><span class="m-1"><strong>Seller Since-</strong></span><span>2 years 2 months</span></div>
+
+                                            </div>
+                                            <br />
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec tincidunt arcu,
+                                            sit amet fermentum sem. Class aptent taciti sociosqu ad litora torquent per
+                                            conubia nostra, per inceptos himenaeos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="custom-btn btn-exchange-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    @*<script src="~/customize/js/setup.js"></script>*@
+    @Html.Partial("Login_PartialView")
+    @Html.Partial("SignUp_PartialView")
+    @*<script>
+        $(document).ready(function () {
+            $('#loginbtn').click(function () {
+                $("#loginmodal").modal('show');
+            })
+            $('#signuppopupbtn').click(function () {
+                $("#SignUpmodal").modal('show');
+            })
+            $('#loginpopupbtn').click(function () {
+                $("#loginmodal").modal('show');
+            })
+        });
+    </script>*@
