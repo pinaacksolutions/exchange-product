@@ -91,5 +91,9 @@ namespace SampleBarterApp.Web.Controllers
         {
             return View();
         }
+        public ActionResult ResetPassword()
+        {
+            return View();
+        }
     }
 }
